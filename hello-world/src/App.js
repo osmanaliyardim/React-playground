@@ -5,12 +5,20 @@ import Welcome from './components/Welcome';
 import Hello from './components/Hello';
 import Message from './components/Message';
 import Counter from './components/Counter';
+import FunctionClick from './components/FunctionClick';
+import ClassClick from './components/ClassClick';
+import EventBind from './components/EventBind';
+import ParentComponent from './components/ParentComponent';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="React Fundamentals"/>
+        <ParentComponent/>
+        <EventBind/>
+        <FunctionClick/>
+        <ClassClick/>
         <Message name='Osman' nickname='Best Developer'/>
         <Greet name='Osman'/>
         <Greet name='Ali'/>
