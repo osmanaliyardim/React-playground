@@ -1,7 +1,12 @@
 import React from 'react';
 
-const Greet = () => {
-    return <h1>Hello, Osman Ali YARDIM</h1>
+const Greet = ( {name, children} ) => { // Destructuring props
+    return (
+        <div>
+            <h1>Hello, {name}</h1>
+            {children}
+        </div>
+    )
 }
 
 export default Greet;
