@@ -9,12 +9,16 @@ import FunctionClick from './components/FunctionClick';
 import ClassClick from './components/ClassClick';
 import EventBind from './components/EventBind';
 import ParentComponent from './components/ParentComponent';
+import UserGreeting from './components/UserGreeting';
+import CustomerList from './components/CustomerList';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="React Fundamentals"/>
+        <CustomerList/>
+        <UserGreeting/>
         <ParentComponent/>
         <EventBind/>
         <FunctionClick/>
